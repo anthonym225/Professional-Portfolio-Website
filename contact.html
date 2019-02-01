@@ -161,8 +161,7 @@ function validateForm(){
 	if(fullName == null || fullName == ""){
 		alert("Full name is required");
 		return false;
-	}
-	if(fullName.length < 4 || (/\d/.test(fullName))){
+	} else if(fullName.length < 4 || (/\d/.test(fullName))){
 		alert("Name must be atleast 4 letters long");
 		return false;
 	}

@@ -9,6 +9,14 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<!--- Lightbox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js.map"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>
+
+
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -112,28 +120,44 @@
     <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
         <div class="carousel-inner row w-100 mx-auto" role="listbox">
             <div class="carousel-item col-md-4 active">
-                <img class="img-fluid mx-auto d-block" src="img/proimg/pro4.jpg" alt="slide 1">
+							 <a href="img/proimg/pro34.jpg" data-toggle="lightbox" data-gallery="theater-gallery" >
+                <img class="img-fluid mx-auto d-block" src="img/proimg/pro34.jpg" alt="slide 1">
+							</a>
             </div>
             <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/proimg/pro5.jpg" alt="slide 2">
+							<a href="img/proimg/pro33.jpg" data-toggle="lightbox" data-gallery="theater-gallery" >
+                <img class="img-fluid mx-auto d-block" src="img/proimg/pro33.jpg" alt="slide 2">
+							</a>
             </div>
             <div class="carousel-item col-md-4">
+							<a href="img/proimg/pro6.jpg" data-toggle="lightbox" data-gallery="theater-gallery" >
                 <img class="img-fluid mx-auto d-block" src="img/proimg/pro6.jpg" alt="slide 3">
+							</a>
             </div>
             <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/proimg/pro7.jpg" alt="slide 4">
+							<a href="img/proimg/pro7.jpg" data-toggle="lightbox" data-gallery="theater-gallery" >
+                <img class="img-fluid mx-auto d-block" src="img/proimg/pro7.jpg" alt="slide 3">
+							</a>
             </div>
             <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/proimg/pro8.jpg" alt="slide 5">
+							<a href="img/proimg/pro8.jpg" data-toggle="lightbox" data-gallery="theater-gallery" >
+                <img class="img-fluid mx-auto d-block" src="img/proimg/pro8.jpg" alt="slide 3">
+							</a>
             </div>
             <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/proimg/pro9.jpg" alt="slide 6">
+							<a href="img/proimg/pro9.jpg" data-toggle="lightbox" data-gallery="theater-gallery" >
+                <img class="img-fluid mx-auto d-block" src="img/proimg/pro9.jpg" alt="slide 3">
+							</a>
             </div>
             <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/proimg/pro10.jpg" alt="slide 7">
+							<a href="img/proimg/pro10.jpg" data-toggle="lightbox" data-gallery="theater-gallery" >
+                <img class="img-fluid mx-auto d-block" src="img/proimg/pro10.jpg" alt="slide 3">
+							</a>
             </div>
             <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="img/proimg/pro11.jpg" alt="slide 7">
+							<a href="img/proimg/pro11.jpg" data-toggle="lightbox" data-gallery="theater-gallery" >
+                <img class="img-fluid mx-auto d-block" src="img/proimg/pro11.jpg" alt="slide 3">
+							</a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
@@ -166,7 +190,14 @@ $('#carouselExample').on('slide.bs.carousel', function (e) {
         }
     }
 });</script>
-<!--- Connect -->
+<!--- Lightbox JS -->
+<script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+</script>
 
 
 <!--- Footer -->
