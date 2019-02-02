@@ -4,7 +4,6 @@ html, body, kbd{
   height: 100%;
   width: 100%;
   font-family: 'Helvetica-light', sans-serif !important;
-  text-transform: uppercase;
 }
 .navbar {
   padding: .8rem;
